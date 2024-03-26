@@ -24,11 +24,11 @@
 
     #text-container {
       position: absolute;
-      margin-left: 5vw;
-      margin-right: 5vw;
+      margin-left: 7vw;
+      margin-right: 7vw;
       top: 100%;
       /* Inizialmente posizionato al di sotto della finestra del browser */
-      animation: scrollText 99s linear infinite;
+      animation: scrollText 129s linear infinite;
       text-indent: 1em;
       /* spostato da p    rientro della prima riga */
 
@@ -73,6 +73,21 @@
       100% {
         top: calc(-1 * var(--textHeight));
         /* Spostamento verso l'alto, considerando l'altezza del testo */
+      }
+    }
+
+    /* Media query per schermi più stretti */
+    @media screen and (max-width: 768px) {
+      #text-container {
+        line-height: 4.8vw;
+      }
+
+      p {
+        font-size: 3vw;
+      }
+
+      p:first-letter {
+        font-size: 4vw;
       }
     }
   </style>
