@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scrolling Text</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      font-family: Georgia, serif;
+      /* spostato da #container */
+    }
+
+    #container {
+      position: relative;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    #text-container {
+      position: absolute;
+      margin-left: 5vw;
+      margin-right: 5vw;
+      top: 100%;
+      /* Inizialmente posizionato al di sotto della finestra del browser */
+      animation: scrollText 99s linear infinite;
+      text-indent: 1em;
+      /* spostato da p    rientro della prima riga */
+
+      line-height: 4.35vw;
+      /* spostato da p*/
+    }
+
+    p {
+      padding: 10px;
+      color: #28282b;
+      font-size: 2.7vw;
+    }
+
+    p:first-letter {
+      font-weight: bold;
+      /* Prima lettera in grassetto */
+      font-size: 4vw;
+      /* Dimensione più grande per la prima lettera */
+      color: #1e1e20;
+    }
+
+    h2 {
+      text-align: center;
+      /* Centra il testo */
+      font-size: 3.4vw;
+      font-weight: bold;
+      /* Testo in grassetto */
+      color: #a5380d;
+      /* Colore salmone scuro */
+      margin-top: 4rem;
+      /* Spazio sopra */
+      margin-bottom: 1.5rem;
+      /* Spazio sotto */
+    }
+
+    @keyframes scrollText {
+      0% {
+        top: 100%;
+        /* Partenza dal basso */
+      }
+
+      100% {
+        top: calc(-1 * var(--textHeight));
+        /* Spostamento verso l'alto, considerando l'altezza del testo */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="text-container">
+      <!-- Inserisci qui il tuo testo -->
+      <h2> Primo paragrafo</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam doloribus maiores esse voluptatum numquam, alias
+        fugit tempore eum et optio doloremque dolores aperiam aspernatur quis corrupti sint facilis explicabo soluta?
+        Nesciunt maxime esse provident totam tenetur saepe quisquam at et. Dolorem recusandae fuga vel distinctio quos
+        nulla totam, quidem id nihil exercitationem nemo reiciendis repellendus, asperiores dignissimos quasi modi
+        harum!</p>
+      <p>Voluptate delectus fuga illo, iste placeat officiis aliquam quam illum eveniet veritatis! Eaque, possimus?
+        Pariatur assumenda libero, placeat incidunt sit dolores ex quidem nemo fugiat veniam minus necessitatibus eius
+        nulla!
+        Doloremque perferendis architecto illum, aliquam consectetur cupiditate eos, quaerat minus voluptate dolores
+        culpa necessitatibus nulla adipisci iste explicabo perspiciatis beatae ipsam cumque eius ratione nobis omnis.
+        Cumque iure totam dolorum.</p>
+      <p>Inventore, suscipit hic! Dignissimos atque, eius quibusdam aspernatur, harum vitae animi modi saepe tenetur non
+        sequi consectetur dolorem quis, nisi ex et consequatur culpa at excepturi facere inventore. Rerum, nemo.
+        Eveniet quidem vel laudantium officia harum adipisci quibusdam veritatis, quaerat non amet iure facilis, aliquam
+        doloremque. </p>
+      <p>Veritatis soluta debitis nam, non ratione molestias eos, nisi atque quos harum, quisquam sunt?
+        Dicta, hic? Sequi architecto id deserunt ipsam voluptas! Minus est earum eos autem et, impedit consequuntur
+        distinctio dicta mollitia numquam obcaecati iusto, ipsa molestiae consequatur! Provident expedita molestiae
+        officiis dolor!
+        Eaque facere amet, deleniti consectetur consequuntur odio eligendi nesciunt, impedit quas nulla ducimus itaque
+        debitis iure aspernatur veritatis expedita repellendus dicta neque mollitia soluta eum reiciendis. Porro placeat
+        at beatae!</p>
+      <h2>Secondo paragrafo</h2>
+      <p>Totam animi quisquam inventore quibusdam voluptatum, sequi voluptas repudiandae laborum obcaecati modi, velit
+        earum magnam aperiam perferendis placeat voluptatibus quia quo fuga quidem molestias tenetur! Officiis suscipit
+        quia dolorum distinctio!
+        Porro, provident? Asperiores quas commodi suscipit? Deleniti vel cumque eveniet ad, ipsum natus facilis
+        assumenda. Iure quae vel, dolorum est veniam incidunt deleniti adipisci, inventore amet soluta, consectetur
+        delectus? Dolorum?</p>
+      <p>Atque quisquam quaerat eligendi sequi, quas numquam sit velit nihil commodi optio deserunt dolore modi quasi
+        incidunt! Assumenda quae, similique doloribus dolores ea ut ipsam accusantium animi minima autem fugit?
+        Natus tempora eligendi a ratione delectus architecto enim explicabo magnam vel ipsa harum quis perspiciatis
+        recusandae, obcaecati quos eius officia. Doloribus nostrum officia accusantium delectus cumque sapiente
+        assumenda id suscipit!
+        Quasi laboriosam, numquam neque esse quaerat rem amet officiis saepe aliquam eius exercitationem laborum id eos!
+        Illum, optio architecto quod modi dolor atque. Perferendis error id quaerat! Mollitia, ipsum sapiente.
+        Nostrum provident in eveniet? Perspiciatis, provident rerum numquam repellendus unde dignissimos odio cum
+        quidem, repellat deleniti quam animi ratione id impedit maiores natus voluptatibus voluptatum omnis dolores
+        corporis aut! Quia.</p>
+      <h2>Terzo paragrafo</h2>
+      <p>Accusantium iure explicabo ex perferendis commodi delectus deserunt blanditiis vitae iusto nobis asperiores rem
+        pariatur quod, sapiente nam veniam a cum molestias. Quae repellendus libero quo neque obcaecati iusto ipsum!
+        Ad, minus mollitia eius non optio praesentium. Hic laborum, eos saepe iure libero officia animi accusamus?
+        Laudantium quasi itaque earum magnam quae ipsa repudiandae, placeat error illum nobis, consequatur cupiditate.
+        Perspiciatis consequatur in molestias voluptatibus architecto porro incidunt ducimus placeat excepturi laborum.
+        Deserunt nobis recusandae facilis, tempora sapiente sed! Delectus quia error doloribus. Laudantium esse commodi
+        odio ex voluptates numquam.
+        Autem, ad placeat! Dicta atque, at tenetur dolor cum exercitationem non eius ullam amet unde nam, neque iure rem
+        deserunt! Aperiam perferendis, debitis nam in fugit rerum error minima est?
+        Fugiat iusto porro, cum id sit molestiae minus illum placeat aspernatur quod rerum at laboriosam fuga ratione
+        reprehenderit enim qui culpa accusamus consequuntur vitae omnis facilis consectetur? Maiores, architecto
+        aperiam?</p>
+      <p>Dolor nostrum facilis animi natus, hic molestias perferendis dolorem suscipit deserunt, in distinctio commodi!
+        Laborum maxime, veritatis error rem pariatur magni inventore sit? Ducimus eveniet officia odio quae nihil
+        facere?
+        Repellendus voluptas assumenda illo earum ab, voluptate accusantium, molestiae tempore harum odio incidunt
+        delectus. Amet aliquid modi possimus eum consectetur architecto nihil reprehenderit sint mollitia, voluptatum
+        quod deleniti sunt animi.
+        In quae iusto animi molestiae atque, aspernatur voluptatem odio incidunt neque porro reiciendis possimus
+        adipisci dolorem quos, tenetur aut architecto veniam. Possimus doloremque voluptatibus natus voluptatem rem,
+        veniam perferendis! Ipsa!
+        Similique pariatur modi officiis debitis enim? Culpa ducimus natus, itaque repudiandae sunt voluptatum
+        perspiciatis facilis recusandae possimus sequi! Omnis quia mollitia quas, deserunt quibusdam quis. Voluptates
+        facilis eos sequi quis?
+        Aliquid beatae cupiditate officiis rem reprehenderit perferendis optio ducimus, quasi aut provident unde minus
+        nobis laboriosam! Eum quisquam impedit nobis doloribus, odio assumenda aperiam ipsam ex culpa explicabo, iure
+        nulla.
+        Amet, pariatur id, perspiciatis maxime nobis reprehenderit placeat molestias enim quas, odio soluta at quisquam
+        ullam. Quas ducimus, enim perferendis repudiandae in esse cum illo maxime fugiat nemo modi laboriosam!
+        Reiciendis facere quaerat aliquam pariatur laboriosam soluta perspiciatis aspernatur consectetur accusantium
+        omnis expedita ipsum quam deleniti numquam et voluptatum officia nobis odit non perferendis, possimus maxime
+        quis. Quis, quas aspernatur!
+        Voluptas dolore vero neque maxime provident quibusdam explicabo, est assumenda commodi minima sapiente aliquid
+        odit sint culpa quos quae, deserunt facere, possimus animi voluptates iste deleniti aspernatur. Numquam, ipsam
+        dolorem?</p>
+      <h2>Conclusioni</h2>
+      <p> Dicta modi doloribus fuga corporis id rem, eos libero asperiores blanditiis reiciendis dignissimos nobis
+        ratione
+        animi consequuntur architecto placeat? Cupiditate, optio! Hic quas perferendis eum beatae tempore sunt, ducimus
+        doloremque.
+        Illo, quo quos inventore impedit commodi debitis obcaecati quod, non earum quae deleniti sequi iure aspernatur
+        blanditiis eligendi! Itaque, tempora error. At, ratione eveniet. Nobis commodi iure ipsam placeat debitis?
+        Libero ipsum est molestiae voluptatibus culpa odit quo nam tempora ut ratione provident, nemo hic eum mollitia
+        dolores eaque voluptatum quos quidem expedita quisquam autem, doloremque explicabo. Repellat, consequuntur. In?
+      </p>
+    </div>
+  </div>
+  <script>
+    window.onload = function () {
+      var textHeight = document.getElementById('text-container').scrollHeight * 0.99;
+      document.documentElement.style.setProperty('--textHeight', textHeight + 'px');
+
+      var textContainer = document.getElementById('text-container');
+
+      // Pausa lo scorrimento quando il mouse entra nella finestra
+      textContainer.addEventListener('mouseenter', function () {
+        textContainer.style.animationPlayState = 'paused';
+      });
+
+      // Riprende lo scorrimento quando il mouse esce dalla finestra
+      textContainer.addEventListener('mouseleave', function () {
+        textContainer.style.animationPlayState = 'running';
+      });
+    };
+  </script>
+</body>
+
+</html>
